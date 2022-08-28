@@ -1,0 +1,518 @@
+*{
+			margin: 0;
+			padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+
+.site_body {
+	background-color: #EFE6E4;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	min-width: 1400px;
+}
+
+
+
+
+
+/* Секция с главным меню*/
+.header {
+	min-height: 715px;
+	font-size: 16px;
+	list-style: none;
+	color: #533738;
+	background-image:url(img/backgrounds/header_background.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding-top:38px;
+}
+
+.main-header{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items: center;
+}
+.main-header a{
+	text-decoration: none;
+	color: #533738;
+}
+.main-header a:hover{
+	color:green;
+}
+.main-header a:active {
+	color: black;
+}
+
+.header-nav{
+	margin-right:90px;
+}
+.header-nav li a{
+	text-decoration:none;
+}
+
+.logo{
+	padding-left:100px;
+}
+.logo img{
+	width:25px;
+	height:25px;
+	vertical-align:middle;
+}
+
+.phone{
+	padding-right: 100px;
+}
+
+.header-nav{
+display:flex;
+}
+
+
+.header-form{
+	margin:91px 681px 168px 182px;
+}
+
+.header-form h2 {
+	font-size: 50px;
+	margin-bottom:24px;
+}
+
+.header-form p {
+	font-size: 18px;
+}
+
+.button-submit {
+	background-color: #CC8B86;
+	display: inline-block;
+	padding: 25px 66px;
+	margin-top: 21px;
+	text-decoration:none;
+	color: #533738;
+}
+.button-submit:hover{
+	color:green;
+	background-color:rgb(234, 168, 179);
+}
+.button-submit:active{
+	color: black;
+}
+
+
+
+
+
+/* Секция с информацией о компании*/
+.about {
+	padding-top: 65px;
+}
+.about h2{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #533738;
+	text-align:center;
+}
+.about .content-wrapper{
+	margin:40px 182px 21px 182px;
+	display:grid;
+	grid-template-columns: 445px 528px;
+	column-gap:64px;
+}
+.content-wrapper img{
+	width:445px;
+	height:465px;
+	background-color: rgb(193, 181, 181);
+}
+.text-content{
+	font-size: 18px;
+	line-height: 30px;
+		
+}
+
+
+
+
+/* Секция с информацией о компании в цифрах*/
+.big_numbrz {
+	background-color: #8D7370;
+	color: #fff;
+}
+
+.number {
+	font-weight: 400;
+	font-size: 50px;
+}
+
+.text {
+	font-weight: 500;
+	font-size: 30px;
+}
+.big_numbrz ul{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.big_numbrz ul li{
+	text-align:center;
+	margin-top:85px;
+	margin-bottom:81px;
+}
+
+
+
+
+/* Секция с портфолио*/
+.projects {
+	background-color: #EFE6E4;
+	padding: 65px 100px;
+	
+}
+.projects h2{
+	margin-bottom:40px;
+	color: #533738;
+	font-weight: 400;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.bedroom {
+	grid-area: bedroom;
+	background-image:url("img/content-img/gallery_bedroom.jpg");
+	color: #FFFFFF;
+	position:relative;
+}
+.bedroom-textcontent{
+	background-color:rgba(100, 72, 69, 0.8);
+	
+	position:absolute;
+	height:451px;
+	display:none;
+}
+.bedroom:hover .bedroom-textcontent{
+display: block;
+}
+
+.bedroom h3{
+		font-weight: 500;
+		font-size: 30px;
+		text-align: center;
+		margin:86px auto 0 auto;
+}
+.bedroom p{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	margin:20px 35px auto 35px;
+}
+.kitchen {
+	grid-area: kitchen;
+}
+.room {
+	grid-area: room;
+}
+.bathroom {
+	grid-area: bathroom;
+}
+.projects-gallery{
+	display:grid;
+	grid-template-columns: 488px 184px 488px;
+	grid-template-rows:451px 451px;
+	gap: 30px 20px;
+	grid-template-areas: 
+	"bedroom kitchen kitchen"
+	"room room bathroom";
+}
+.gallery_more{
+	text-decoration:none;
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 30px;
+	color: #533738;
+}
+.button_container{
+	text-align: center;
+	margin-top: 40px;
+}
+
+
+
+
+/* Секция с инфой о команде*/
+
+.team {
+	background-color: #E2C4BA;
+	height: 998px;
+	text-align:center;
+	padding:50px 100px 80px 100px;
+}
+.team h2{
+		font-style: normal;
+		font-weight: 400;
+		font-size: 40px;
+		color: #533738;
+}
+
+.team_cards li{
+	width:320px;
+}
+.team_cards{
+	margin-top:40px;
+	margin-bottom:35px;
+	display: flex;
+	flex:nowrap;
+	justify-content: space-evenly;
+}
+.team_cards li img{
+	width: 320px;
+	height: 253px;
+	margin-bottom:10px;
+}
+.team_cards li p{
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 30px;
+		color: #533738;
+		text-align:left;
+}
+
+
+
+
+
+
+/* Секция с описанием работы*/
+.workflow_list{
+	margin-top:60px;
+	display:grid;
+	grid-template-columns:285px 285px 285px 285px;
+	column-gap:20px;	
+}
+.workflow_list li{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #533738;
+}
+.circle{
+	width:70px;
+	height:70px;
+	background-color:#8D7370;
+	border-radius:50%;	
+	margin-left:auto;
+	margin-right:auto;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 70px;
+	color: #FFFFFF;
+	margin-bottom:20px;
+}
+.circle span{
+	white-space: nowrap;
+		overflow: hidden;
+}
+
+
+
+
+
+
+
+/* Секция с отзывами*/
+.reviews{
+	padding:65px 182px;
+	position:relative;
+}
+.reviews h2{
+		font-style: normal;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 50px;
+		color: #533738;
+		text-transform: uppercase;
+		text-align:center;
+		margin-bottom:40px;
+}
+.review_text{
+	display:block;
+	width:407px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #533738;
+	font-style:normal;
+	margin-top:91px;
+}
+.review_text label{
+	text-transform: uppercase;
+}
+.review_pictures img{
+	width:407px;
+	height:272px;
+}
+.review_slide{
+	margin-left:auto;
+	margin-right:auto;
+	width:834px;
+	display:grid;
+	grid-template-columns:407px 407px;
+	gap:20px;
+}
+
+.review_pictures{
+	display:grid;
+	grid-template-columns:407px;
+	grid-template-rows:272px 272px;
+	gap:24px;
+}
+.review_button{
+	width:72px;
+	height:72px;
+	border-radius:50%;
+	background-color:#CC8B86;
+	border: none;
+	padding:36px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	position:absolute;
+	top:390px;
+	left:182px;
+}
+.review_button-right {
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	background-color: #CC8B86;
+	border: none;
+	padding: 36px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 390px;
+	right: 182px;
+	transform:rotate(180deg);
+}
+.arrow_btn:hover {
+	background-color: rgb(234, 168, 179);
+}
+
+.arrow_btn:active {
+	background-color: rgb(100, 44, 44);
+}
+
+.review_button img,
+.review_button-right img{
+	width:32px;
+}
+
+
+/* Секция с формой обратной связи и картой*/
+
+
+.feedback_form {
+	background-color: #8D7370;
+	height: 624px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 50px;
+	color:#fff;
+	
+	}
+.form-container{
+display: grid;
+	width: 1118px;
+	margin-left: auto;
+	margin-right: auto;
+	grid-template-columns: 508px 590px;
+	gap: 20px;
+}
+.form_header{
+text-transform:uppercase;
+margin-top:50px;
+}
+.form-info{
+	font-size: 18px;
+	line-height: 30px;
+	opacity: 0.6;
+	margin-top:24px;
+}
+.feedback_form .map{
+	width:590px;
+	height:624px;
+}
+.contact_form input{
+		border:none;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 30px;
+		border-bottom:1px solid #fff;
+		color:#fff;
+		width: 508px;
+		height: 35px;
+		background: #8D7370;
+}
+.contact_form input::placeholder{
+color: #FFF;
+}
+.contact_form .button_submit{
+border:none;
+width:309px;
+height:74px;
+background-color: #CC8B86;
+display: inline-block;
+padding: 25px 66px;
+margin-top: 31px;
+color:#533738;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.button_submit:hover {
+	color: green;
+	background-color: rgb(234, 168, 179);
+}
+
+.button_submit:active {
+	color: black;
+}
+
+
+
+
+
+/* Подвал с контактами*/
+.footer_contacts p{
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 30px;
+		color: #533738;
+		display:inline-block;
+		margin-top: 37px;
+		margin-bottom: 37px;
+}
+.footer-phone{
+	margin-right:42px;
+	margin-left:100px;
+}
+.footer-name{
+	margin-right:100px;
+	margin-left:379px;
+}
